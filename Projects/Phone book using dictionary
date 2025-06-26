@@ -1,0 +1,15 @@
+my_dict = {"Raghav":9087654332,"Simran":9678869101,"Lalitha":9187654321,"Mary":9876509872}
+key_input = input("Enter the name")
+bool = False
+for key,values in my_dict.items():
+    if(key_input == key):
+        key_to_print = key
+        bool = True
+
+if bool:
+    print(f"{key_to_print} phone number is {my_dict[key_to_print]}")
+else:
+    print("Person is not found")
+
+my_dict.update({"rajini":9087654321})
+print(my_dict)
